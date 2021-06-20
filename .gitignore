@@ -1,2 +1,6 @@
 node_modules/
 config/
+bundle/
+access.log
+log/
+.DS_Store
