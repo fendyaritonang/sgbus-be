@@ -22,6 +22,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
     "env-cmd": "^10.1.0",
     "nodemon": "^2.0.7",
     "webpack": "^5.38.1",

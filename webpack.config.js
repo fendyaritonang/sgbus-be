@@ -1,4 +1,5 @@
 const path = require('path');
+const copyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -11,4 +12,11 @@ module.exports = {
   node: {
     __dirname: false,
   },
+  plugins: [
+    new copyPlugin({
+      patterns: [
+        { from: 'Dockerfile', to: path.resolve(__dirname, 'bundle/dist') },
+      ],
+    }),
+  ],
 };
